@@ -1,37 +1,40 @@
-public class QuickSelect {
+import java.util.*;
 
+public class QuickSelect {
     public static void main(String[] args) {
-        int[] arr = { 2, 4, 6, 7, 3, 4, 5 };
-        quickSelect(arr, 0, 6, 1);
+        int [] arr = { 2, 3, 13, 53, 45, 46 };
+        quickSort(arr, 0, arr.length - 1);
+        System.out.println(Arrays.toString(arr));
     }
 
-    public static void quickSelect(int[] arr, int low, int high, int k) {
-        int pvtIndx = partition(arr, low, high);
-        System.out.println(pvtIndx);
-        if (pvtIndx + 1 == k) {
-            System.out.println(arr[pvtIndx]);
-        } else if (pvtIndx + 1 < k) {
-            quickSelect(arr, pvtIndx, high, k);
-        } else {
-            quickSelect(arr, low, pvtIndx, k);
-        }
+    public static void quickSort(int [] arr, int low , int high){
+          if(low<high){
+            int  pivot = partition(arr, low, high);
+            if(pivot ==4){
+                System.out.println(arr[pivot]+"hh");
+            }
+            quickSort(arr, low, pivot-1);
+            quickSort(arr, pivot+1, high);
+          }
     }
 
     public static int partition(int[] arr, int low, int high) {
-        int i = -1, pivot = arr[high];
+        int pivot = arr[high];
+        int i = -1;
         for (int j = low; j < high; j++) {
             if (arr[j] < pivot) {
                 i++;
-                int temp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
+                swap(arr, j, i);
             }
         }
         i++;
-        int temp = arr[i + 1];
-        arr[i + 1] = arr[i];
-        arr[i] = temp;
-
+        swap(arr, i, high);
         return i;
+    }
+
+    public static void swap(int[] arr, int temp1, int temp2) {
+        int temp = arr[temp1];
+        arr[temp1] = arr[temp2];
+        arr[temp2] = temp;
     }
 }
