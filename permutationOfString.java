@@ -5,7 +5,7 @@ import java.util.*;
 
 public class permutationOfString{
     public static void main(String[] args) {
-        System.out.println(generate("abcd",""));
+        System.out.println(generate("abcda",""));
     }
     /**
      * The function generates all possible combinations of two strings by recursively adding characters
