@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class xorr
+class Xorr
 {
     public static void main(String args[])
     {

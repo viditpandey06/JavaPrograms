@@ -1,4 +1,4 @@
-public class DynamicSlidingWindow {
+public class SlidingWindow {
 
     public static int[] findWindow(int[] arr,
 
