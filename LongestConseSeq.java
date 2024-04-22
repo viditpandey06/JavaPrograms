@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.HashSet;
 
 public class LongestConseSeq {
     public static void main(String[] args) {
@@ -11,48 +13,31 @@ public class LongestConseSeq {
         // for (int i = 0; i < n; i++) {
         //     arr[i] = sc.nextInt();
         // }
-        int[] arr = { 0, 3, 7, 2, 5, 8, 4, 6, 0, 1};
+        int[] arr = { 0, 3, 7, 2, 5,5, 8, 4, 6, 0, 1};
         System.out.println(longestConsecutive(arr));
     }
+   
 
     public static int longestConsecutive(int[] arr) {
         Arrays.sort(arr);
-        int i = 0, j = 0;
         int max = 0;
-        int ctr=0;
-        while (i < arr.length-2 && j < arr.length-1) {
-            if (arr[j+1] - arr[j] == 1  ) {
-                
-                j++;
-                max = Math.max(max, (j - i-ctr) + 1);
-            } 
-            else if (arr[j+1] - arr[j] == 0){
-                ctr++;
-                j++;
-
-            } 
-            else {
-                max = Math.max(max, (j-i-ctr)+1);
-                i=j+1;
-                ctr=0;
-                j=j+1;
-            }
-
+        Set<Integer> set = new HashSet<>();
+        for (int i : arr) {
+            set.add(i);
         }
+        System.out.println(set);
+        for (int i : set) {
+            if (!set.contains(i - 1)) {
+                int currentNum = i;
+                int currentStreak = 1;
+                while (set.contains(currentNum + 1)) {
+                    currentNum += 1;
+                    currentStreak += 1;
+                }
+                max = Math.max(max, currentStreak);
+            }
+        }
+
         return max;
-        // Arrays.sort(arr);
-        // int ctr = 0;
-        // int maxLength = 0;
-        // for (int i = 0; i < arr.length - 1; i++) {
-        //     if (arr[i + 1] - arr[i] == 1) {
-        //         ctr++;
-        //     } else if (arr[i + 1] - arr[i] == 0) {
-        //         continue;
-        //     } else {
-        //         maxLength = Math.max(ctr, maxLength);
-        //         ctr = 0;
-        //     }
-        // }
-        // return maxLength;
     }
 }
