@@ -28,5 +28,6 @@ public class KthFactor {
 
             }
         }
+        return 0;
     }
 }

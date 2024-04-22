@@ -44,7 +44,7 @@ class Author {
     }
 }
 
-public class Main {
+public class CopyConstructor {
     public static void main(String[] args) {
         Author author1 = new Author("John Doe", "johndoe@example.com");
         Book book1 = new Book("The Great Gatsby", author1);
