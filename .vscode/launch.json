@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "JavaPrograms_af36c959"
+        },
+        {
+            "type": "java",
+            "name": "CopyConstructor",
+            "request": "launch",
+            "mainClass": "CopyConstructor",
+            "projectName": "JavaPrograms_af36c959"
+        },
+        {
+            "type": "java",
+            "name": "SpiralMatrix",
+            "request": "launch",
+            "mainClass": "SpiralMatrix",
+            "projectName": "JavaPrograms_af36c959"
+        },
+        {
+            "type": "java",
+            "name": "HappyString",
+            "request": "launch",
+            "mainClass": "HappyString",
+            "projectName": "JavaPrograms_af36c959"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
