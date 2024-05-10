@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AllBitsOfLength",
+            "request": "launch",
+            "mainClass": "AllBitsOfLength",
+            "projectName": "JavaPrograms_af36c959"
+        },
+        {
+            "type": "java",
+            "name": "MyServer",
+            "request": "launch",
+            "mainClass": "MyServer",
+            "projectName": "JavaPrograms_af36c959"
+        },
+        {
+            "type": "java",
+            "name": "MyClient",
+            "request": "launch",
+            "mainClass": "MyClient",
+            "projectName": "JavaPrograms_af36c959"
+        },
+        {
+            "type": "java",
+            "name": "MajorityElemtIIBrute",
+            "request": "launch",
+            "mainClass": "MajorityElemtIIBrute",
+            "projectName": "JavaPrograms_af36c959"
+        },
+        {
+            "type": "java",
+            "name": "MajorityElemtIIBrute$MajorityElemtIIBrute",
+            "request": "launch",
+            "mainClass": "MajorityElemtIIBrute$MajorityElemtIIBrute",
+            "projectName": "JavaPrograms_af36c959"
+        },
+        {
+            "type": "java",
+            "name": "SubarraySumEqualK",
+            "request": "launch",
+            "mainClass": "SubarraySumEqualK",
+            "projectName": "JavaPrograms_af36c959"
+        },
+        {
+            "type": "java",
             "name": "test",
             "request": "launch",
             "mainClass": "test",

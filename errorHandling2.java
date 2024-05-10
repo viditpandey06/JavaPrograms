@@ -1,7 +1,6 @@
 import java.io.FileReader;
 import java.io.IOException;
-
-public public class ErrorHandlingExample {
+class ErrorHandlingExample {
 
     public static void main(String[] args) {
         try {
