@@ -1,3 +1,4 @@
+
 /**
  * The BinarySearchSqrt class implements a binary search algorithm to find the
  * square root of a given

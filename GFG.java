@@ -1,6 +1,5 @@
-/*package whatever //do not write package name here */
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 class GFG {
