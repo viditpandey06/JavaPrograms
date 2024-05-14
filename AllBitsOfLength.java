@@ -10,7 +10,7 @@ public class AllBitsOfLength {
             return "";
 
         } else {
-            return "1" + printAllBits(n - 1) + ",0" + printAllBits(n - 1);
+            return "1" + printAllBits(n - 1);
         }
 
     }
