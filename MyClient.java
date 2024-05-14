@@ -4,7 +4,7 @@ import java.net.Socket;
 
 class MyClient {
     public static void main(String args[]) throws Exception {
-        Socket s = new Socket("localhost", 3333);
+        Socket s = new Socket("192.168.0.100", 3333); // Replace "localhost" with the IP address of the server
         DataInputStream dis = new DataInputStream(s.getInputStream());
         DataOutputStream dos = new DataOutputStream(s.getOutputStream());
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,8 +18,5 @@ class MyClient {
         }
         dos.close();
         s.close();
-        
-
     }
-
 }
