@@ -31,6 +31,4 @@ class ErrorHandlingExample {
     public static void openNonexistentFile() throws IOException {
         FileReader reader = new FileReader("nonexistent.txt"); // Throws IOException (checked exception)
     }
-}{
-
 }
