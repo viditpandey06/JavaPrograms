@@ -1,5 +1,4 @@
 
-
 public class AllBitsOfLength {
     public static void main(String[] args) {
         int n = 4;
